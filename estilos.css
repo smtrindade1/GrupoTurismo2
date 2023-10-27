@@ -1,0 +1,348 @@
+  * {
+    padding: 0;
+    text-decoration: none !important;
+    text-align: center;
+    list-style: none;
+    white-space: nowrap
+    }
+
+    /* Estilo del cuerpo */
+    body {
+      font-size: 20px;
+      font-family: 'Russo One', sans-serif;
+      background-color: #f1f4d9;
+      position: relative;
+    }
+
+      /* Estilo de los botones en el encabezado */
+      .Menu {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end; /* Mueve los botones hacia la derecha del encabezado */
+      }
+
+    /* Tamaño y transición de transformación para los logos */
+    #logofoto {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+    width: 110px; /* Ajusta el tamaño del logotipo según tus preferencias */
+    height: auto; /* Mantén la relación de aspecto */
+    margin-right: 10px;
+    }
+
+    /* Aplica la misma animación de rotación a todos los logos al pasar el mouse */
+    #logofoto:hover, #logos:hover {
+    transform: rotate(10deg);
+    }
+
+    /* Estilo del título "Web-de-Turismo" */
+  h1 {
+      font-family: 'Russo One', sans-serif;
+      font-size: 30px; /* Ajusta el tamaño del título según tus preferencias */
+      align-items: center;
+      white-space: pre-line;
+      margin-left: 5px;
+      margin-right: 10px;
+      }
+
+
+
+  .boton-enlace {
+    background-color: #000406;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 18px;
+    margin: 05px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+
+  }
+
+  /* Añade un espacio entre los botones en dispositivos más pequeños */
+  @media (max-width: 1000px) {
+    .Menu {
+      flex-direction: column; /* Cambia la dirección de los botones a columna */
+      align-items: flex-end; /* Alinea los botones a la derecha en la columna */
+      text-align: right; /* Alinea el texto a la derecha en la columna */
+    }
+
+    .boton-enlace {
+      margin: 5px; /* Espacio entre los botones en la columna */
+      padding: 10px 20px; /* Ajusta el relleno de los botones */
+    }
+  }
+
+    .boton-enlace:hover {
+    background-color: #e60909;
+    color: #fff;
+    }
+
+    /* Estilo del contenedor del encabezado */
+    .header-container {
+    position: fixed absolute !important ;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    max-width: 60%;
+    }
+
+    /* Alinea el título a la izquierda */
+    header {
+    box-sizing: border-box;
+    text-align: left;
+    background-color: #ffffff;
+    color: #070202;
+    position: fixed !important;
+    z-index: 1;
+    top: 0;
+    }
+
+  .imagencard {
+    width: 30rem;
+    margin-top: 200px; 
+    
+  }
+  .imagencard1 {
+    width: 30rem;
+
+  }
+
+  
+  h2 {  
+    font-family: 'Russo One', sans-serif!important;
+    color: #3f56ea!important;
+    font-size: 44px!important; 
+    align-items: center!important;
+    }
+
+    /* Estilo del footer */
+    footer {
+    background-color: #000406;
+    color: #06b6f6;
+    bottom: 0 !important;
+    width: 100%;
+    }
+
+    /* Estilo para los contenedores de las secciones en el footer */
+    .footer-container {
+      display: flex !important;
+    justify-content: space-around !important;
+    }
+
+    .redes-sociales a {
+      margin: 0 10px; /* Agrega margen horizontal para separar los íconos */
+    }
+    
+
+    /* Estilo para los enlaces en el footer */
+    ul li a {
+    color: #fff;
+    font-size: 14px;
+    margin: 5px 5px;
+    display: inline-block;
+    transition: color 0.3s ease;
+    }
+
+    /* Efecto de cambio de color al pasar el mouse sobre los enlaces del footer */
+    ul li a:hover {
+    color: #e60909;
+    }
+
+
+  /* Estilo para el botón "Log In" */
+  .boton-login {
+    background-color: #0b65cd;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+    margin-right: 1110px;
+    z-index: 3; /* Asegura que el botón tenga un z-index superior */
+    margin-left: 10px;
+    }
+
+.formulario-abierto .boton-login {
+  background-color: #0b65cd; /* Ajusta el color de fondo a lo deseado */
+  color: #fff; /* Ajusta el color de fuente a lo deseado */
+  /* Otros estilos del botón cuando el formulario está abierto */
+}
+
+  /* Efecto de cambio de color al pasar el mouse sobre el botón "Log In" */
+  .boton-login:hover {
+    background-color: #11cc00;
+  }
+
+/* Estilo del formulario de registro */
+.registro-formulario {
+  display: none;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%; /* Alinea verticalmente al centro */
+  left: 50%; /* Alinea horizontalmente al centro */
+  transform: translate(-50%, -50%); /* Centra el formulario */
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 500px; /* Cambia el ancho a lo que necesites */
+  /* Ajusta la altura del formulario según tus necesidades */
+  height: auto;
+  max-height: 80%; /* Limita la altura máxima del formulario si es necesario */
+  transition: all 0.5s; /* Agrega una transición suave para mostrar/ocultar el formulario */
+}
+
+.registro-formulario h2 {
+  font-size: 24px;
+}
+
+/* Resto del estilo del formulario se mantiene igual */
+
+.registro-formulario label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.registro-formulario input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.registro-formulario button {
+  background-color: #0b65cd;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.registro-formulario button:hover {
+  background-color: #11cc00;
+}
+
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .overlay.active {
+    height: 100%; /* Cambiamos la altura para mostrar el overlay */
+    z-index: 1; /* Cambiamos el z-index para que esté por encima del contenido */
+  }
+  
+  
+  body.formulario-abierto::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+.info {
+  padding-top: 11%;
+
+}
+
+.foto-info {
+  width: 60%;
+  margin-top: 2%;
+margin-bottom: 15%;}
+
+.multiline {
+    white-space: pre-line;
+  }
+  
+
+  /* Estilo para el carrusel */
+.carousel {
+  margin-top: 150px; /* Ajusta el margen superior según tus necesidades */
+  margin-bottom: 120px;
+}
+
+.carousel-indicators {
+  bottom: 110px; /* Coloca los indicadores en la parte inferior */
+}
+
+
+.carousel-inner {
+  border-radius: 4110px; /* Borde redondeado para el carrusel */
+  width: 100%;
+}
+
+.carousel-item {
+  text-align: center; /* Alineación del contenido del carrusel */
+
+}
+
+.carousel-item img {
+  margin: 0 auto; /* Centra horizontalmente */
+  max-height: 100%; /* Evita que las imágenes se salgan del carrusel */
+}
+
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para las leyendas */
+  color: #fff; /* Color del texto de la leyenda */
+  border-radius: 115px; /* Borde redondeado para la leyenda */
+  padding: 10px; /* Espaciado interno de la leyenda */
+}
+
+.carousel-caption h3 {
+  font-size: 44px; /* Ajusta el tamaño del título según tus preferencias */
+}
+
+/* Estilo para los controles de navegación (flechas) en dispositivos móviles */
+@media (max-width: 768px) {
+  .carousel-control-prev, .carousel-control-next {
+      font-size: 20px; /* Ajusta el tamaño de los íconos en dispositivos móviles */
+  }
+}
+
+.d-block {
+  width: 70%;
+
+}
+/* Estilos específicos para transporte.html */
+body.transporte { 
+  font-family: 'Russo One', sans-serif;
+  font-size: 20px;
+  background-color: #f1f4d9;
+} 
+ 
+.carousel-inner .carousel-item {
+  transition: transform 1ms ease;
+}
+
+.header-container.transporte {
+      position: fixed absolute;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 1rem;
+      max-width: 160%;
+      }
+      

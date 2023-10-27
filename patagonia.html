@@ -1,0 +1,136 @@
+            <!DOCTYPE html>
+            <html lang="es">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Web Turismo</title>
+                <link rel="stylesheet" href="estilos.css">
+                <!-- Carga de fuentes -->
+
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+            </head>
+           
+            <body>
+                
+                <header>
+               
+                    <div class="header-container">
+                        <a href="index.html">
+                            <img id="logofoto" src="https://img.freepik.com/vector-premium/ilustracion-imagenes-logotipo-viaje_6543-1060.jpg" alt="Logo">
+                        </a>
+                        <h1>TURISMO ARGENTINA</h1>
+                        
+                            <div class="Menu">
+                                <a class="boton-enlace" href="index.html">Home</a>
+                                <a class="boton-enlace" href="costa2.html">Costa Atlántica</a>
+                                <a class="boton-enlace" href="Noroeste.html">Noroeste</a>
+                                <a class="boton-enlace" href="patagonia.html">Patagonia</a>
+                                <a class="boton-enlace" href="transporte.html">Viaja de la mejor forma</a>
+                                <a class="boton-enlace" href="informacion.html">Información Turistica</a>
+                        </div>
+   
+                        <a class="boton-login" id="login-button" href="#">Log In</a>
+                    </div>
+                </header>
+                
+            
+            <!-- overlay -->  
+        <div class="overlay" id="overlay"></div>
+
+
+              <!-- formulario oculto -->  
+        
+    <div class="registro-formulario" id="registro-formulario">
+        <h2>Registro</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required><br><br>
+
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+    
+        <script>
+            
+        const botonLogin = document.getElementById('login-button');
+const formularioRegistro = document.getElementById('registro-formulario');
+const overlay = document.getElementById('overlay');
+
+botonLogin.addEventListener('click', () => {
+    // Mostrar el formulario
+    formularioRegistro.style.display = 'block';
+    
+    // Mostrar el overlay al agregar la clase 'active'
+    overlay.classList.add('active');
+});
+
+// Agrega un evento de clic al overlay para ocultar el formulario y el overlay
+overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) {
+        formularioRegistro.style.display = 'none';
+        overlay.classList.remove('active'); // Quita la clase 'active'
+    }
+});
+
+          </script>
+          
+        
+        <script src="/Turismo/script.js"></script>   
+      
+          <div>
+        <img class="imagencard" src="https://tn.com.ar/resizer/y2nhGaAR7X7dDw_95HE9XEf8Vds=/1440x0/smart/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/artear/GQ35ZT4ETNEMJIDSG5KKKPLPGE.jpeg" alt="qa" width="100%">
+        </div>
+
+       
+           <h2 class="multiline">La Patagonia argentina, un paraíso natural de vastas extensiones de hielo, bosques y montañas, te espera para vivir una aventura única. Sumérgete en la inmensidad de sus paisajes, observa la vida silvestre en su estado más puro y descubre la serenidad de este rincón austral, donde la naturaleza se despliega en todo su esplendor.</h2>
+          
+           <div>
+            <img class="imagencard1" src="https://www.laardillavoladora.com/wp-content/uploads/2022/12/que-ver-en-la-Patagonia-Argentina.jpg" alt="qa" >
+            </div>
+    
+
+
+        
+            </body>
+
+            <footer>
+                <div class="footer-container">
+                    <div class="redes-sociales">
+                        <h4>Síguenos en redes sociales:</h4>
+                        <nav>
+                            <a href="https://www.facebook.com/TurismoPBA//"target="blank">
+                                <img width="35" src="./imagenes/facebook.png" alt="Facebook"> </a>  <!-- target para que no rompa, abre en una página en blanco -->
+                            <a href="https://twitter.com/TurismoPBA"target="blank">
+                                <img width="35" src="./imagenes/gorjeo.png" alt="Twitter"> </a>
+                            <a href="https://www.instagram.com/turismopba/"target="blank">
+                                <img width="35" src="./imagenes/instagram.png" alt="Instagram"> </a>
+                        </nav>
+                    </div>
+                    <div class="informacion-legal">
+                        <h4>Información legal:</h4>
+                        <ul>
+                            <li><a href="#">Términos y condiciones</a></li>
+                            <li><a href="#">Política de privacidad</a></li>
+                            <li><a href="#">Aviso legal</a></li>
+                        </ul>
+                    </div> 
+                    <div class="otros-enlaces">
+                        <h4>Otros enlaces:</h4>
+                        <ul>
+                            <li><a href="#">Contacto</a></li>
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+  
+            </html>
